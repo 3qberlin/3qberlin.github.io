@@ -1,12 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    test
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-2</title>
+    <link rel="stylesheet" href="./Scss/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-JavaScript-Templates/3.20.0/js/tmpl.min.js"
+      integrity="sha512-yQJVqoTPFSC73MaslsQaVJ0zHku4Cby3NpQzweSYju+kduWspfF4HmJ3zAo1QGERfsoXdf45q54ph8XTjOlp8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-JavaScript-Templates/3.20.0/js/tmpl.min.js"
+      integrity="sha512-yQJVqoTPFSC73MaslsQaVJ0zHku4Cby3NpQzweSYju+kduWspfF4HmJ3zAo1QGERfsoXdf45q54ph8XTjOlp8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="container margin-y-customize sm-margin-none sm-padding-y">
+      <header
+        class="header d-flex space-between border-bottom margin-x-1-and-50 padding-bottom-1"
+      >
+        <div class="d-flex align-items-center justify-content-center">
+          <img
+            src="./Images/Union (Stroke).png"
+            alt="logo"
+            class="sm-width-1"
+          />
+          <img
+            src="./Images/AI工具王.png"
+            alt="AI工具王"
+            class="margin-left-0 sm-width-5"
+          />
+        </div>
+        <ul class="d-flex align-items-center justify-content-center sm-d-none">
+          <a href="#" class="font-color-surface sm-margin-x-">
+            <li>首頁</li>
+          </a>
+          <a href="#" class="font-color-surface margin-left-1-and-20">
+            <li>定價</li>
+          </a>
+        </ul>
+        <div class="sm-menu d-none">
+          <img id="menu-icon" src="./Images/Vector (8).png" alt="sm-menu" />
+        </div>
+      </header>
+      <div class="sm-relative d-none" id="menu-content">
+        <div
+          class="sm-menu-cover sm-d-flex align-items-center justify-content-center sm-wrap"
+        >
+          <ul
+            class="d-flex align-items-center justify-content-center sm-wrap sm-margin-top-5"
+          >
+            <a
+              href="#"
+              class="font-color-surface sm-font-size-xxl sm-width-percent-100 sm-d-flex sm-justify-content-center"
+            >
+              <li>首頁</li>
+            </a>
+            <a
+              href="#"
+              class="font-color-surface sm-font-size-xxl sm-width-percent-100 sm-d-flex sm-justify-content-center sm-margin-top-1"
+            >
+              <li>定價</li>
+            </a>
+            <li class="sm-width-percent-100 sm-margin-top-3 sm-padding-top-8">
+              AI工具王 ⓒ2023
+            </li>
+            <li class="sm-d-flex sm-width-percent-100 sm-margin-top-3">
+              <span> Facebook </span>
+              <span class="sm-margin-x-1-and-25"> Twitter </span>
+              <span> Instagram </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="font-size-xxl bold line-height-xl sm-line-height-sm">
+        <h2 class="sm-font-size-md sm-line-height-base">透過</h2>
+        <h1 class="sm-font-size-md sm-line-height-base">AI工具王的</h1>
+        <h2 class="sm-font-size-md sm-line-height-base">強大模型</h2>
+        <h2 class="sm-font-size-md sm-line-height-base">讓您的業務更聰明</h2>
+        <button
+          type="btn"
+          class="border-radius-percent-10 border width-8 height-3 font-color-surface bg-color-100 sm-width-5 sm-font-size-sm"
+        >
+          開始使用
+        </button>
+      </section>
+      <section 
+        class="d-flex justify-content-flex-end sm-justify-content-flex-start sm-margin-top-4"
+      >
+        <div class="image-container sm-image-container" >
+          <img id="active-image"
+            src="./Images/deco.png"
+            alt="deco"
+            class="width-percent-30 img-1"
+          />
+          <img id="active-image2"
+            src="./Images/deco.png"
+            alt="deco"
+            class="width-percent-30 img-2"
+          />
+          <img id="active-image3"
+            src="./Images/deco.png"
+            alt="deco"
+            class="width-percent-30 img-3"
+          />
+        </div>
+      </section>
+      <main class="margin-top-3">
+        <ul class="d-flex font-size-md bold light-height-md sm-wrap">
+          <li
+            class="width-percent-30 line-height-md sm-width-percent-100 Noto-Sans-TC-Black-900"
+          >
+            我們的服務
+          </li>
+          <li
+            class="width-percent-70 margin-left-3 line-height-md sm-width-percent-100 sm-margin-none sm-margin-top-1-and-20"
+          >
+            <p>我們相信透過AI技術，</p>
+            <p>
+              包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。
+            </p>
+          </li>
+        </ul>
+        <ul class="d-flex margin-top-4 space-between sm-wrap sm-gap">
+          <li
+            class="width-percent-32 border border-radius-percent-10 padding-4 sm-width-percent-100"
+          >
+            <img
+              src="./Images/Vector (3).png"
+              alt="fast"
+              class="margin-left-1 margin-top-1-and-50"
+            />
+            <h3 class="margin-top-1-and-20 font-size-md Noto-Sans-TC-Black-900">
+              快速
+            </h3>
+            <p class="margin-top-1-and-50 line-height-base">
+              我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。
+            </p>
+          </li>
+          <li
+            class="width-percent-32 border border-radius-percent-10 padding-4 sm-width-percent-100"
+          >
+            <img
+              src="./Images/Vector (4).png"
+              alt="work"
+              class="margin-top-1"
+            />
+            <h3 class="margin-top-1-and-20 font-size-md Noto-Sans-TC-Black-900">
+              靈活
+            </h3>
+            <p class="margin-top-1-and-50 line-height-base">
+              我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。
+            </p>
+          </li>
+          <li
+            class="width-percent-32 border border-radius-percent-10 padding-4 sm-width-percent-100"
+          >
+            <img
+              src="./Images/Vector (5).png"
+              alt="extend"
+              class="margin-top-1"
+            />
+            <h3 class="margin-top-1-and-20 font-size-md Noto-Sans-TC-Black-900">
+              擴充
+            </h3>
+            <p class="margin-top-1-and-50 line-height-base">
+              我們的服務支持多種擴充選項，可以滿足您的不斷增長的AI需求。
+            </p>
+          </li>
+        </ul>
+      </main>
+      <section class="margin-top-6">
+        <p class="font-size-md bold">來自合作夥伴</p>
+        <div class="d-flex space-evenly margin-top-3 margin-left-2 sm-overflow">
+          <img src="./Images/Rectangle 13.png" alt="logo" />
+          <img src="./Images/Rectangle 14.png" alt="logo" />
+          <img src="./Images/Rectangle 15.png" alt="logo" />
+          <img src="./Images/Rectangle 25.png" alt="logo" />
+          <img src="./Images/Rectangle 27.png" alt="logo" />
+          <img src="./Images/Rectangle 29.png" alt="logo" />
+        </div>
+        <div
+          class="position-relative margin-top-1-and-50 sm-d-flex sm-overflow"
+        >
+          <img
+            src="./Images/Rectangle 32.png"
+            alt="logo"
+            class="position-absolute margin-y-1"
+          />
+          <img
+            src="./Images/enterprise7.png"
+            alt="logo"
+            class="width-10 margin-left-4"
+          />
+          <img src="./Images/Rectangle 18.png" alt="logo" class="" />
+          <img src="./Images/Rectangle 20.png" alt="logo" class="" />
+          <img src="./Images/Rectangle 22.png" alt="logo" class="" />
+          <img src="./Images/Rectangle 24.png" alt="logo" class="" />
+          <img src="./Images/Rectangle 25.png" alt="logo" class="" />
+          <img src="./Images/enterprise7.png" alt="logo" class="width-10" />
+          <img
+            src="./Images/Rectangle 33.png"
+            alt="logo"
+            class="position-absoulte position-right-1"
+          />
+        </div>
+        <br />
+      </section>
+      <section class="margin-top-5">
+        <ul class="d-flex space-between sm-d-flex sm-wrap sm-gap gap">
+          <li
+            class="border-radius-percent-10 bg-color-80 width-percent-32 padding-3 sm-width-percent-100"
+          >
+            <ul class="d-flex">
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+            </ul>
+            <p
+              class="margin-top-2 line-height-base width-21 height-13-and-50 sm-width-percent-100"
+            >
+              非常喜歡 AI工具王 提供的 AI
+              模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王
+              提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！
+            </p>
+            <ul class="d-flex align-items-center">
+              <li><img src="./Images/Ellipse 3.png" alt="user" /></li>
+              <li class="margin-left-1">
+                <p class="line-height-base">陳小姐</p>
+                <p class="line-height-base">ABC科技有限公司</p>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="border-radius-percent-10 bg-color-80 width-percent-32 padding-3 sm-width-percent-100 sm-d-none"
+          >
+            <ul class="d-flex">
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+            </ul>
+            <p
+              class="margin-top-2 line-height-base width-21 height-13-and-50 sm-width-percent-100"
+            >
+              Copy 作為一家醫療器材公司，我們非常關注人工智能技術的應用，而
+              AI工具王 提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用
+              AI工具王
+              的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝
+              AI工具王 團隊的辛勤工作！
+            </p>
+            <ul class="d-flex align-items-center sm-margin-top-1">
+              <li><img src="./Images/Ellipse 3 (1).png" alt="user" /></li>
+              <li class="margin-left-1">
+                <p class="line-height-base">劉小姐</p>
+                <p class="line-height-base">XYZ 醫療器材有限公司</p>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="border-radius-percent-10 bg-color-80 width-percent-32 padding-3 sm-width-percent-100 sm-d-none"
+          >
+            <ul class="d-flex">
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+              <li>
+                <img
+                  src="./Images/Vector (6).png"
+                  alt="star"
+                  class="margin-y-0"
+                />
+              </li>
+            </ul>
+            <p
+              class="margin-top-2 line-height-base width-21 height-13-and-50 sm-width-percent-100"
+            >
+              Copy
+              我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而
+              AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用
+              AI工具王
+              的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝
+              AI工具王 團隊的支持！
+            </p>
+            <ul class="d-flex align-items-center sm-margin-top-2-and-40">
+              <li><img src="./Images/Ellipse 3 (2).png" alt="user" /></li>
+              <li class="margin-left-1">
+                <p class="line-height-base">黃先生</p>
+                <p class="line-height-base">XYZ 醫療器材有限公司</p>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="d-flex justify-content-center sm-width-percent-100 align-items-center"
+          >
+            <img
+              src="./Images/Ellipse 4.png"
+              alt="page"
+              class="width-1 margin-y-0 d-none"
+            />
+            <img
+              src="./images/Ellipse 5.png"
+              alt="page"
+              class="width-0 height-0 margin-y-0 d-none"
+            />
+            <img
+              src="./images/Ellipse 5.png"
+              alt="page"
+              class="width-0 height-0 margin-y-0 d-none"
+            />
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section
+      class="section-background-color-white border-radius-percent-20 margin-top-6 font-color-black-100"
+    >
+      <main
+        class="margin-y-customize padding-top-6 padding-bottom-6 sm-margin-none"
+      >
+        <h2
+          class="font-size-xxl text-align-center bold sm-d-flex Noto-Sans-TC-Black-900 sm-font-size-2-and-65 sm-padding-x-1-and-25"
+        >
+          這些超酷的應用，都來自AI工具王
+        </h2>
+        <div
+          class="position-relative font-color-black-60 sm-margin-x-1-and-25 sm-margin-top-0"
+        >
+          <input
+            type="text"
+            placeholder="輸入關鍵字搜尋"
+            class="border-radius-percent-10 bg-color-40 border-0 height-5 margin-top-3 width-percent-100"
+          />
+          <i class="material-icons position-absolute position-search-1"
+            >search</i
+          >
+        </div>
+        <div class="menu d-flex space-between margin-top-3 sm-margin-top-1">
+          <div
+            class="d-flex justify-content-center align-items-center sm-margin-left-1-and-25"
+          >
+            <button
+              type="btn"
+              class="border-black border-radius-percent-10 bg-color-0 justify-content-center align-items-center height-3 width-8 d-flex justify-content-center align-items-center"
+            >
+              <span class="margin-left-1">篩選</span
+              ><img
+                src="./Images/Vector (7).png"
+                alt="symbol"
+                class="width-1 margin-y-1"
+              />
+            </button>
+          </div>
+          <div class="hover sm-d-none">
+            <ul class="d-flex space-evenly align-items-center">
+              <li
+                class="border border-radius-percent-10 padding-1 text-align-center margin-y-1 active"
+              >
+                全部
+              </li>
+              <li
+                class="border border-radius-percent-10 padding-1 text-align-center margin-y-1"
+              >
+                聊天
+              </li>
+              <li
+                class="border border-radius-percent-10 padding-1 text-align-center margin-y-1"
+              >
+                影像辨識
+              </li>
+              <li
+                class="border border-radius-percent-10 padding-1 text-align-center margin-y-1"
+              >
+                翻譯
+              </li>
+              <li
+                class="border border-radius-percent-10 padding-1 text-align-center margin-y-1"
+              >
+                行銷
+              </li>
+              <li
+                class="border border-radius-percent-10 padding-1 text-align-center margin-y-1"
+              >
+                客服
+              </li>
+              <li
+                class="border border-radius-percent-10 padding-1 text-align-center margin-y-1"
+              >
+                生產力
+              </li>
+            </ul>
+          </div>
+          <div
+            class="d-flex border-radius-percent-10 justify-content-center align-items-center sm-margin-right-1-and-25"
+          >
+            <button
+              type="btn"
+              class="border-black border-radius-percent-10 bg-color-0 justify-content-center align-items-center height-3 width-9 d-flex justify-content-center align-items-center"
+            >
+              <span class="margin-left-1">由新到舊</span
+              ><span class="material-icons margin-y-1">expand_more</span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="hover d-none sm-margin-left-1-and-25 sm-margin-right-1-and-25"
+        >
+          <ul
+            class="d-flex space-evenly align-items-center sm-margin-top-1 sm-overflow sm-justify-content-flex-start"
+          >
+            <li
+              class="border border-radius-percent-10 padding-1 text-align-center margin-y-1 active sm-width-6 sm-margin-x-1-and-25"
+            >
+              全部
+            </li>
+            <li
+              class="border border-radius-percent-10 padding-1 text-align-center margin-y-1 sm-width-6 sm-margin-y-0"
+            >
+              聊天
+            </li>
+            <li
+              class="border border-radius-percent-10 padding-1 text-align-center margin-y-1 sm-width-8 sm-margin-y-0"
+            >
+              影像辨識
+            </li>
+            <li
+              class="border border-radius-percent-10 padding-1 text-align-center margin-y-1 sm-margin-y-0 sm-width-6"
+            >
+              翻譯
+            </li>
+            <li
+              class="border border-radius-percent-10 padding-1 text-align-center margin-y-1"
+            >
+              行銷
+            </li>
+            <li
+              class="border border-radius-percent-10 padding-1 text-align-center margin-y-1"
+            >
+              客服
+            </li>
+            <li
+              class="border border-radius-percent-10 padding-1 text-align-center margin-y-1"
+            >
+              生產力
+            </li>
+          </ul>
+        </div>
+        <div class="card margin-top-5">
+          <ul class="d-flex wrap gap">
+            <li
+              class="width-percent-32 border-black border-radius-percent-20 sm-width-percent-100 sm-margin-x-1-and-25"
+            >
+              <div class="border-radius-percent-20-card overflow">
+                <img
+                  src="./Images/Rectangle 35.png"
+                  alt="img"
+                  class="card-img"
+                />
+              </div>
+              <div class="padding-2 border-bottom-card">
+                <p class="font-size-md bold">Chatbot Builder</p>
+                <p
+                  class="margin-top-1 font-color-black-60 line-height-base height-3"
+                >
+                  建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。
+                </p>
+              </div>
+              <div
+                class="d-flex space-between padding-2 font-size-sd border-bottom-card"
+              >
+                <h3 class="bold">AI模型</h3>
+                <p>卡卡</p>
+              </div>
+              <div class="d-flex space-between padding-2 font-size-sd">
+                <h3 class="bold">#聊天</h3>
+                <a href="#">
+                  <i class="material-icons font-color-black-80">share</i>
+                </a>
+              </div>
+            </li>
+            <li
+              class="width-percent-32 border-black border-radius-percent-20 sm-width-percent-100 sm-margin-x-1-and-25"
+            >
+              <div class="border-radius-percent-20-card overflow">
+                <img
+                  src="./Images/Rectangle 35 (1).png"
+                  alt="img"
+                  class="card-img"
+                />
+              </div>
+              <div class="padding-2 border-bottom-card">
+                <p class="font-size-md bold">Image Recognition Platform</p>
+                <p
+                  class="margin-top-1 font-color-black-60 line-height-base height-3"
+                >
+                  專業的圖像識別平台，識別圖像、分類、標記等。
+                </p>
+              </div>
+              <div
+                class="d-flex space-between padding-2 font-size-sd border-bottom-card"
+              >
+                <h3 class="bold">AI模型</h3>
+                <p>杰杰</p>
+              </div>
+              <div class="d-flex space-between padding-2 font-size-sd">
+                <h3 class="bold">#影像辨識</h3>
+                <a href="#">
+                  <i class="material-icons font-color-black-80">share</i>
+                </a>
+              </div>
+            </li>
+            <li
+              class="width-percent-32 border-black border-radius-percent-20 sm-width-percent-100 sm-margin-x-1-and-25"
+            >
+              <div class="border-radius-percent-20-card overflow">
+                <img
+                  src="./Images/Rectangle 35 (2).png"
+                  alt="img"
+                  class="card-img"
+                />
+              </div>
+              <div class="padding-2 border-bottom-card">
+                <p class="font-size-md bold">Language Translation API</p>
+                <p
+                  class="margin-top-1 font-color-black-60 line-height-base height-3"
+                >
+                  專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。
+                </p>
+              </div>
+              <div
+                class="d-flex space-between padding-2 font-size-sd border-bottom-card"
+              >
+                <h3 class="bold">AI模型</h3>
+                <p>琪琪</p>
+              </div>
+              <div class="d-flex space-between padding-2 font-size-sd">
+                <h3 class="bold">#翻譯</h3>
+                <a href="#">
+                  <i class="material-icons font-color-black-80">share</i>
+                </a>
+              </div>
+            </li>
+            <li
+              class="width-percent-32 border-black border-radius-percent-20 sm-width-percent-100 sm-margin-x-1-and-25"
+            >
+              <div class="border-radius-percent-20-card overflow">
+                <img
+                  src="./Images/Rectangle 35 (3).png"
+                  alt="img"
+                  class="card-img"
+                />
+              </div>
+              <div class="padding-2 border-bottom-card">
+                <p class="font-size-md bold">Sentiment Analysis API</p>
+                <p
+                  class="margin-top-1 font-color-black-60 line-height-base height-3"
+                >
+                  自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。
+                </p>
+              </div>
+              <div
+                class="d-flex space-between padding-2 font-size-sd border-bottom-card"
+              >
+                <h3 class="bold">AI模型</h3>
+                <p>昊昊</p>
+              </div>
+              <div class="d-flex space-between padding-2 font-size-sd">
+                <h3 class="bold">#行銷</h3>
+                <a href="#">
+                  <i class="material-icons font-color-black-80">share</i>
+                </a>
+              </div>
+            </li>
+            <li
+              class="width-percent-32 border-black border-radius-percent-20 sm-width-percent-100 sm-margin-x-1-and-25"
+            >
+              <div class="border-radius-percent-20-card overflow">
+                <img
+                  src="./Images/Rectangle 35 (4).png"
+                  alt="img"
+                  class="card-img"
+                />
+              </div>
+              <div class="padding-2 border-bottom-card">
+                <p class="font-size-md bold">Fraud Detection Platform</p>
+                <p
+                  class="margin-top-1 font-color-black-60 line-height-base height-3"
+                >
+                  預防詐騙活動，適用於銀行、金融、電商等。
+                </p>
+              </div>
+              <div
+                class="d-flex space-between padding-2 font-size-sd border-bottom-card"
+              >
+                <h3 class="bold">AI模型</h3>
+                <p>卡卡</p>
+              </div>
+              <div class="d-flex space-between padding-2 font-size-sd">
+                <h3 class="bold">#客服</h3>
+                <a href="#">
+                  <i class="material-icons font-color-black-80">share</i>
+                </a>
+              </div>
+            </li>
+            <li
+              class="width-percent-32 border-black border-radius-percent-20 sm-width-percent-100 sm-margin-x-1-and-25"
+            >
+              <div class="border-radius-percent-20-card overflow">
+                <img
+                  src="./Images/Rectangle 35 (5).png"
+                  alt="img"
+                  class="card-img"
+                />
+              </div>
+              <div class="padding-2 border-bottom-card">
+                <p class="font-size-md bold">Voice Assistant SDK</p>
+                <p
+                  class="margin-top-1 font-color-black-60 line-height-base height-3"
+                >
+                  通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。
+                </p>
+              </div>
+              <div
+                class="d-flex space-between padding-2 font-size-sd border-bottom-card"
+              >
+                <h3 class="bold">AI模型</h3>
+                <p>杰杰</p>
+              </div>
+              <div class="d-flex space-between padding-2 font-size-sd">
+                <h3 class="bold">#生產力</h3>
+                <a href="#">
+                  <i class="material-icons font-color-black-80">share</i>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div
+            class="page margin-top-3 width-percent-100 d-flex justify-content-flex-end sm-justify-content-flex-start"
+          >
+            <ul class="d-flex font-color-black-100 sm-margin-x-1-and-25">
+              <li class="page-item page-active margin-y-0">1</li>
+              <li class="page-item margin-y-0">2</li>
+              <li class="page-item margin-y-0">3</li>
+              <li class="page-item margin-y-0">4</li>
+              <li class="page-item margin-y-0">5</li>
+              <li class="page-item margin-y-0">></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </section>
+    <div
+      class="container margin-y-customize margin-top-9 sm-margin-none sm-margin-top-5"
+    >
+      <div class="d-flex justify-content-center align-items-center wrap">
+        <h2
+          class="font-size-xxl width-percent-100 text-align-center margin-top-6 sm-d-flex sm-justify-content-center sm-font-size-md sm-width-percent-51 sm-line-height-2"
+        >
+          現在就來建立屬於你的服務吧
+        </h2>
+        <button
+          type="btn"
+          class="border-radius-percent-10 border width-10 height-3 font-color-surface bg-color-100 margin-top-3 d-flex justify-content-center align-items-center space-evenly font-size-sd sm-width-percent-51"
+        >
+          <span class="margin-y-0">開始使用</span
+          ><span class="material-icons margin-y-0"> north_east </span>
+        </button>
+      </div>
+      <footer class="footer margin-top-5 sm-padding-y">
+        <ul
+          class="d-flex space-between border-top border-bottom d-flex-direction-row-reverse sm-d-flex-direction-column"
+        >
+          <li class="margin-top-3">
+            <img src="./Images/Union (Stroke).png" alt="star" />
+            <img src="./Images/AI工具王.png" alt="AI工具王" />
+          </li>
+          <li class="font-size-xxxl line-height-xxxl margin-top-3 bold">
+            <p>
+              <a href="#" class="font-color-surface sm-font-size-xxl">首頁</a>
+            </p>
+            <p class="margin-bottom-3">
+              <a href="#" class="font-color-surface sm-font-size-xxl">定價</a>
+            </p>
+          </li>
+        </ul>
+        <div class="d-flex margin-top-2 margin-bottom-2 align-items-center">
+          <h4 class="width-percent-30 sm-width-percent-100">AI工具王 ⓒ2023</h4>
+          <ul class="d-flex sm-d-none">
+            <a href="#" class="font-color-surface">
+              <li class="margin-y-1">Facebook</li>
+            </a>
+            <a href="#" class="font-color-surface">
+              <li class="margin-y-1">Twitter</li>
+            </a>
+            <a href="#" class="font-color-surface">
+              <li class="margin-y-1">Instagram</li>
+            </a>
+          </ul>
+          <div class="d-flex justify-content-flex-end width-percent-100">
+            <a href="#" class="font-color-surface"
+              >Back to top
+              <img src="./Images/Vector (2).png" alt="gotop" class="margin-y-0"
+            /></a>
+          </div>
+        </div>
+        <div class="d-none sm-margin-bottom-2">
+          <ul class="d-flex">
+            <a href="#" class="font-color-surface">
+              <li class="margin-y-1 sm-margin-none">Facebook</li>
+            </a>
+            <a href="#" class="font-color-surface">
+              <li class="margin-y-1 sm-margin-none sm-margin-x-1-and-25">
+                Twitter
+              </li>
+            </a>
+            <a href="#" class="font-color-surface">
+              <li class="margin-y-1 sm-margin-none">Instagram</li>
+            </a>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.getElementById("menu-icon");
+        const menuContent = document.getElementById("menu-content");
+        const activeImage = document.getElementById('active-image');
+        const activeImage2 = document.getElementById('active-image2');
+        const activeImage3 = document.getElementById('active-image3');
+
+        menuIcon.addEventListener("click", function () {
+          menuContent.classList.toggle("d-none");
+          activeImage.classList.toggle('sm-d-none');
+          activeImage2.classList.toggle('sm-d-none');
+          activeImage3.classList.toggle('sm-d-none');
+        });
+      });
+      
+    </script>
+  </body>
 </html>

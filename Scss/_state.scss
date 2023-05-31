@@ -1,0 +1,48 @@
+.hover ul li:hover {
+  background-color: $color-black-40;
+  color: $color-black-100;
+  border: 1px solid lightgray;
+  border-radius: 10% 10%;
+}
+
+.active {
+  background-color: $color-black-40;
+  color: $color-black-100;
+  border: 1px solid lightgray;
+  border-radius: 10% 10%;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}
+
+.img-1 {
+  animation: slide-animation 4s infinite;
+  animation-delay: 1.2s;
+}
+
+.img-2 {
+  animation: slide-animation 4s infinite;
+  animation-delay: 0.8s;
+}
+
+.img-3 {
+  animation: slide-animation 4s infinite;
+  animation-delay: 0.4s;
+}
+
+@keyframes slide-animation {
+  15% {
+    transform: translateY(20%);
+  }
+  45% {
+    transform: translateY(-35%);
+  }
+  65% {
+    transform: translateY(65%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

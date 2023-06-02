@@ -58,7 +58,9 @@
 .gap {
   gap: 20px;
 }
-
+.flex-grow{
+  flex-grow: 1;
+}
 .margin {
   &-none {
     margin: 0px;
@@ -222,6 +224,9 @@
     }
     &-7 {
       margin-right: $rem * 7;
+    }
+    &-15{
+      margin-right: $rem * 15;
     }
   }
   &-bottom {
@@ -454,6 +459,9 @@
   &-21 {
     width: $rem * 21;
   }
+  &-100{
+    width: 100 * $rem;
+  }
   &-120 {
     width: $rem * 120;
   }
@@ -594,7 +602,7 @@
         &-1 {
           padding: 0px $rem;
           &-and-25 {
-            padding: 0px $rem & 1.25;
+            padding: 0px $rem * 1.25;
           }
           &-and-75 {
             padding: 0px $rem * 1.75;
@@ -958,10 +966,5 @@
     &-relative{
       position: relative;
     }
-  }
-}
-.width-percent{
-  &-50{
-    width: 50%;
   }
 }

@@ -243,6 +243,10 @@ img {
   gap: 20px;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .margin-none {
   margin: 0px;
 }
@@ -386,6 +390,9 @@ img {
 }
 .margin-right-7 {
   margin-right: 7rem;
+}
+.margin-right-15 {
+  margin-right: 15rem;
 }
 .margin-bottom-0 {
   margin-bottom: 0.8rem;
@@ -593,6 +600,9 @@ img {
 .width-21 {
   width: 21rem;
 }
+.width-100 {
+  width: 100rem;
+}
 .width-120 {
   width: 120rem;
 }
@@ -708,7 +718,7 @@ img {
     padding: 0px 1rem;
   }
   .sm-padding-x-1-and-25 {
-    padding: 0px 1rem .sm-padding-x-1-and-25 1.25;
+    padding: 0px 1.25rem;
   }
   .sm-padding-x-1-and-75 {
     padding: 0px 1.75rem;
@@ -1021,10 +1031,6 @@ img {
     position: relative;
   }
 }
-.width-percent-50 {
-  width: 50%;
-}
-
 .card-img {
   border-radius: 20px 20px 0px 0px;
   overflow: hidden;
@@ -1377,6 +1383,14 @@ input::placeholder {
 
 .list-style-circle {
   list-style: circle;
+}
+
+.container .price ul li {
+  width: 100%;
+}
+
+li {
+  flex-grow: 1;
 }
 
 .hover ul li:hover {

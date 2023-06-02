@@ -339,5 +339,11 @@ input::placeholder {
   list-style: circle;
 }
 
+.container .price ul li {
+  width: 100%;
+}
 
+li {
+  flex-grow: 1;
+}
 

@@ -729,8 +729,14 @@ img {
   .sm-padding-y-1-and-75 {
     padding: 1.75rem 0px;
   }
+  .sm-padding-none {
+    padding: 0px;
+  }
   .sm-padding-1 {
     padding: 1rem;
+  }
+  .sm-padding-0 {
+    padding: 0;
   }
   .sm-padding-top-1 {
     padding-top: 1rem;
@@ -1031,6 +1037,10 @@ img {
     position: relative;
   }
 }
+.sm-padding-0 {
+  padding: 0px;
+}
+
 .card-img {
   border-radius: 20px 20px 0px 0px;
   overflow: hidden;
@@ -1275,6 +1285,9 @@ input::placeholder {
   }
   .sm-padding-y {
     padding: 0px 10px;
+  }
+  .sm-padding-none {
+    padding: 0px;
   }
   .sm-width-0 {
     width: 0.6rem;

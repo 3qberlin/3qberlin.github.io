@@ -59,18 +59,20 @@
           <ul
             class="d-flex align-items-center justify-content-center sm-wrap sm-margin-top-5"
           >
-            <a
-              href="#"
-              class="font-color-surface sm-font-size-xxl sm-width-percent-100 sm-d-flex sm-justify-content-center"
-            >
-              <li>首頁</li>
-            </a>
-            <a
-              href="#"
-              class="font-color-surface sm-font-size-xxl sm-width-percent-100 sm-d-flex sm-justify-content-center sm-margin-top-1"
-            >
-              <li>定價</li>
-            </a>
+            <li></li>
+              <a
+                class="font-color-surface sm-font-size-xxl sm-width-percent-100 sm-d-flex sm-justify-content-center"
+                href="/index.html"
+                >首頁</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-color-surface sm-font-size-xxl sm-width-percent-100 sm-d-flex sm-justify-content-center"
+                href="/price.html"
+                >定價</a
+              >
+            </li>
             <li class="sm-width-percent-100 sm-margin-top-3 sm-padding-top-8">
               AI工具王 ⓒ2023
             </li>
@@ -95,21 +97,24 @@
           開始使用
         </button>
       </section>
-      <section 
-        class="d-flex justify-content-flex-end sm-justify-content-flex-start sm-margin-top-4 height-5" 
+      <section
+        class="d-flex justify-content-flex-end sm-justify-content-flex-start sm-margin-top-4 height-5"
       >
-        <div class="image-container sm-image-container" >
-          <img id="active-image"
+        <div class="image-container sm-image-container">
+          <img
+            id="active-image"
             src="./Images/deco.png"
             alt="deco"
             class="width-percent-30 img-1"
           />
-          <img id="active-image2"
+          <img
+            id="active-image2"
             src="./Images/deco.png"
             alt="deco"
             class="width-percent-30 img-2"
           />
-          <img id="active-image3"
+          <img
+            id="active-image3"
             src="./Images/deco.png"
             alt="deco"
             class="width-percent-30 img-3"
@@ -778,7 +783,9 @@
               <a href="#" class="font-color-surface sm-font-size-xxl">首頁</a>
             </p>
             <p class="margin-bottom-3">
-              <a href="#" class="font-color-surface sm-font-size-xxl">定價</a>
+              <a href="/price.html" class="font-color-surface sm-font-size-xxl"
+                >定價</a
+              >
             </p>
           </li>
         </ul>
@@ -823,18 +830,17 @@
       document.addEventListener("DOMContentLoaded", function () {
         const menuIcon = document.getElementById("menu-icon");
         const menuContent = document.getElementById("menu-content");
-        const activeImage = document.getElementById('active-image');
-        const activeImage2 = document.getElementById('active-image2');
-        const activeImage3 = document.getElementById('active-image3');
+        const activeImage = document.getElementById("active-image");
+        const activeImage2 = document.getElementById("active-image2");
+        const activeImage3 = document.getElementById("active-image3");
 
         menuIcon.addEventListener("click", function () {
           menuContent.classList.toggle("d-none");
-          activeImage.classList.toggle('sm-d-none');
-          activeImage2.classList.toggle('sm-d-none');
-          activeImage3.classList.toggle('sm-d-none');
+          activeImage.classList.toggle("sm-d-none");
+          activeImage2.classList.toggle("sm-d-none");
+          activeImage3.classList.toggle("sm-d-none");
         });
       });
-      
     </script>
   </body>
 </html>

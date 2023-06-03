@@ -617,8 +617,14 @@
           }
         }
       }
+      &-none{
+        padding: 0px;
+      }
       &-1 {
         padding: $rem;
+      }
+      &-0{
+        padding: 0;
       }
       &-top {
         &-1 {
@@ -967,4 +973,8 @@
       position: relative;
     }
   }
+}
+
+.sm-padding-0{
+  padding:0px;
 }

@@ -1034,6 +1034,9 @@ img {
   .sm-relative {
     position: relative;
   }
+  .sm-line-height-sm {
+    line-height: 2 1rem;
+  }
 }
 .sm-padding-0 {
   padding: 0px;

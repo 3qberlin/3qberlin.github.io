@@ -1407,6 +1407,15 @@ li {
   flex-grow: 1;
 }
 
+h1 {
+  background-image: url(https://ithelp.ithome.com.tw/storage/image/logo.svg);
+  width: 150px;
+  height: 42.677px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .hover ul li:hover {
   background-color: #d1d1d1;
   color: #020202;

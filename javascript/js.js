@@ -12,3 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
     activeImage3.classList.toggle("sm-d-none");
   });
 });
+
+let stop = document.getElementById('stop');
+let stop1 = document.getElementById('stop1');
+let stop2 = document.getElementById('stop2');
+stop.onclick = function(e){
+  return false;
+}
+stop1.onclick = function(e){
+  return false;
+}
+stop2.onclick = function(e){
+  return false;
+}
+
+
+

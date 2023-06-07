@@ -40,6 +40,9 @@
   &-center {
     align-items: center;
   }
+  &-flex-end{
+    align-items: flex-end;
+  }
 }
 .justify-content {
   &-center {
@@ -515,6 +518,12 @@
   &-8 {
     height: $rem * 8;
   }
+  &-9{
+    height: 9 * $rem;
+  }
+  &-10{
+    height: 10 * $rem;
+  }
   &-13 {
     &-and-50 {
       height: $rem * 13.5;
@@ -522,6 +531,14 @@
   }
   &-120 {
     width: $rem * 120;
+  }
+  &-percent{
+    &-50{
+      height: 50%;
+    }
+    &-80{
+      height: 80%;
+    }
   }
 }
 

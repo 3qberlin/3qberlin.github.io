@@ -9,8 +9,13 @@
   }
 }
 
+.border-none{
+  border:none;
+}
+
 .page {
   &-item {
+    border:none;
     color: $color-black-100;
     background-color: $color-black-0;
     width: $font-size * 3;

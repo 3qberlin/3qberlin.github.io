@@ -1,5 +1,3 @@
-
-
 .d {
   &-flex {
     display: flex;
@@ -493,12 +491,31 @@
   }
 }
 
+@media screen and (min-width: 980px) {
+  .d {
+    &-none {
+      display: none;
+    }
+  }
+  .lg {
+    &-margin-none {
+      margin: 0px;
+    }
+    &-overflow {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    &-margin-top-2 {
+      margin-top: 2 * $rem;
+    }
+  }
+}
 
 @media screen and (max-width: 979px) {
   .container {
     max-width: 979px;
   }
-  
+
   .md {
     &-image-container {
       display: flex;
@@ -506,58 +523,58 @@
       align-items: center;
       width: 100%;
     }
-    &-margin-none{
-      margin:0px;
+    &-margin-none {
+      margin: 0px;
     }
-    &-margin-x{
-      &-2{
+    &-margin-x {
+      &-2 {
         margin: 2 * $rem 0px;
       }
     }
-    &-margin-top{
-      &-2{
+    &-margin-top {
+      &-2 {
         margin-top: 2 * $rem;
       }
     }
-    &-width-percent{
-      &-100{
+    &-width-percent {
+      &-100 {
         width: 100%;
       }
     }
-    &-wrap{
+    &-wrap {
       flex-wrap: wrap;
     }
-    &-gap{
-      gap:20px;
+    &-gap {
+      gap: 20px;
     }
-    &-overflow-x{
+    &-overflow-x {
       overflow-x: hidden;
     }
-    &-none{
-      display:none;
+    &-none {
+      display: none;
     }
-    &-justify-content{
-      &-start{
+    &-justify-content {
+      &-start {
         justify-content: flex-start;
       }
     }
-    &-width-6{
+    &-width-6 {
       width: 6 * $rem;
     }
-    &-padding-right-3{
+    &-padding-right-3 {
       padding-right: 3 * $rem;
     }
     &-overflow {
       overflow-x: auto;
       white-space: nowrap;
     }
-    &-margin-top-2{
+    &-margin-top-2 {
       margin-top: 2 * $rem;
     }
-    &-padding-y-customize{
-      padding: 1 * $rem 0px ;
+    &-padding-y-customize {
+      padding: 1 * $rem 0px;
     }
-    &-padding-y{
+    &-padding-y {
       padding: 0px 2 * $rem;
     }
     &-menu-cover {
@@ -679,7 +696,7 @@
         &-1 {
           padding-top: $rem;
         }
-        &-8{
+        &-8 {
           padding-top: 8 * $rem;
         }
       }
@@ -1018,9 +1035,8 @@
       overflow-x: auto;
       white-space: nowrap;
     }
-    &-relative{
+    &-relative {
       position: relative;
     }
-    
   }
 }

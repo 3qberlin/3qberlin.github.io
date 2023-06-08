@@ -181,11 +181,6 @@ img {
   position: relative;
 }
 
-@media screen and (min-width: 980px) {
-  .d-none {
-    display: none;
-  }
-}
 .d-flex {
   display: flex;
 }
@@ -622,6 +617,21 @@ img {
   width: 120rem;
 }
 
+@media screen and (min-width: 980px) {
+  .d-none {
+    display: none;
+  }
+  .lg-margin-none {
+    margin: 0px;
+  }
+  .lg-overflow {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .lg-margin-top-2 {
+    margin-top: 2rem;
+  }
+}
 @media screen and (max-width: 979px) {
   .container {
     max-width: 979px;

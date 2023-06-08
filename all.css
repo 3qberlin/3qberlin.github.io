@@ -186,6 +186,7 @@ img {
   }
   .container {
     max-width: 375px;
+    margin: 0 auto;
   }
   .sm-image-container {
     display: flex;

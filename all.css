@@ -179,23 +179,22 @@ img {
   position: relative;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   body {
-    width: 375px;
     margin: 0 auto;
   }
   .container {
-    max-width: 375px;
+    max-width: 767px;
     margin: 0 auto;
   }
   .sm-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
   }
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
   .d-none {
     display: none;
   }
@@ -673,7 +672,7 @@ img {
   height: 80%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .sm-margin-none {
     margin: 0px;
   }

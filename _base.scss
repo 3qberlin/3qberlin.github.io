@@ -44,13 +44,13 @@ img {
   position: relative;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   body {
-    width: 375px;
+    // mawidth: 375px;
     margin: 0 auto;
   }
   .container {
-    max-width: 375px;
+    max-width: 767px;
     margin: 0 auto;
   }
   .sm {
@@ -58,7 +58,7 @@ img {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      max-width: 100%;
     }
   }
 }

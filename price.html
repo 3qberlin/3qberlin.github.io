@@ -250,9 +250,11 @@
     </div>
     <section
       class="section-background-color-white border-radius-percent-20 margin-top-6 font-color-black-100"
+      style="overflow-x: hidden"
     >
-      <main
-        class="padding-top-6 padding-bottom-6 sm-margin-none"
+      <h2 class="d-none sm-d-none">中間區塊</h2>
+      <section
+        class="container padding-top-6 padding-bottom-6 sm-margin-none " style="margin:0 auto;"
       >
         <h2
           class="font-size-xxl text-align-center bold sm-d-flex Noto-Sans-TC-Black-900 sm-font-size-2-and-65 sm-padding-x-1-and-25"
@@ -266,12 +268,12 @@
             type="text"
             placeholder="輸入關鍵字搜尋"
             class="border-radius-percent-10 bg-color-40 border-0 height-5 margin-top-3 width-percent-100"
-          >
+          />
           <i class="material-icons position-absolute position-search-1"
             >search</i
           >
         </div>
-        <div class="menu d-flex space-between margin-top-3 sm-margin-top-1" style="overflow-x: hidden;">
+        <div class="menu d-flex space-between margin-top-3 sm-margin-top-1">
           <div
             class="d-flex justify-content-center align-items-center sm-margin-left-1-and-25"
           >
@@ -279,15 +281,11 @@
               type="button"
               class="border-black border-radius-percent-10 bg-color-0 justify-content-center align-items-center height-3 width-8 d-flex justify-content-center align-items-center"
             >
-              <span class="margin-left-1">篩選</span
-              ><img
-                src="./Images/Vector (7).png"
-                alt="symbol"
-                class="width-1 margin-y-1"
-              >
+              <span class="margin-left-1">篩選</span>
+              <span class="material-icons margin-y-0"> filter_alt </span>
             </button>
           </div>
-          <div class="hover sm-d-none">
+          <div class="hover sm-d-none" style="overflow-x: hidden">
             <ul class="d-flex space-evenly align-items-center">
               <li
                 class="border border-radius-percent-10 padding-1 text-align-center margin-y-1 active"
@@ -330,7 +328,7 @@
             class="d-flex border-radius-percent-10 justify-content-center align-items-center sm-margin-right-1-and-25"
           >
             <button
-              type="btn"
+              type="button"
               class="border-black border-radius-percent-10 bg-color-0 justify-content-center align-items-center height-3 width-9 d-flex justify-content-center align-items-center"
             >
               <span class="margin-left-1">由新到舊</span
@@ -382,16 +380,16 @@
           </ul>
         </div>
         <div class="card margin-top-5">
-          <ul class="d-flex wrap gap">
+          <ul class="d-flex wrap gap space-between">
             <li
               class="width-percent-32 border-black border-radius-percent-20 sm-width-percent-100 sm-margin-x-1-and-25"
             >
               <div class="border-radius-percent-20-card overflow">
-                <img
+                <img 
                   src="./Images/Rectangle 35.png"
                   alt="img"
-                  class="card-img"
-                >
+                  class="card-img width-percent-100"
+                />
               </div>
               <div class="padding-2 border-bottom-card">
                 <p class="font-size-md bold">Chatbot Builder</p>
@@ -409,7 +407,7 @@
               </div>
               <div class="d-flex space-between padding-2 font-size-sd">
                 <h3 class="bold">#聊天</h3>
-                <a href="#">
+                <a href="#" class="nowork">
                   <i class="material-icons font-color-black-80">share</i>
                 </a>
               </div>
@@ -421,8 +419,8 @@
                 <img
                   src="./Images/Rectangle 35 (1).png"
                   alt="img"
-                  class="card-img"
-                >
+                  class="card-img width-percent-100"
+                />
               </div>
               <div class="padding-2 border-bottom-card">
                 <p class="font-size-md bold">Image Recognition Platform</p>
@@ -440,7 +438,7 @@
               </div>
               <div class="d-flex space-between padding-2 font-size-sd">
                 <h3 class="bold">#影像辨識</h3>
-                <a href="#">
+                <a href="#" class="nowork">
                   <i class="material-icons font-color-black-80">share</i>
                 </a>
               </div>
@@ -452,8 +450,8 @@
                 <img
                   src="./Images/Rectangle 35 (2).png"
                   alt="img"
-                  class="card-img"
-                >
+                  class="card-img width-percent-100"
+                />
               </div>
               <div class="padding-2 border-bottom-card">
                 <p class="font-size-md bold">Language Translation API</p>
@@ -471,7 +469,7 @@
               </div>
               <div class="d-flex space-between padding-2 font-size-sd">
                 <h3 class="bold">#翻譯</h3>
-                <a href="#">
+                <a href="#" class="nowork">
                   <i class="material-icons font-color-black-80">share</i>
                 </a>
               </div>
@@ -483,8 +481,8 @@
                 <img
                   src="./Images/Rectangle 35 (3).png"
                   alt="img"
-                  class="card-img"
-                >
+                  class="card-img width-percent-100"
+                />
               </div>
               <div class="padding-2 border-bottom-card">
                 <p class="font-size-md bold">Sentiment Analysis API</p>
@@ -502,7 +500,7 @@
               </div>
               <div class="d-flex space-between padding-2 font-size-sd">
                 <h3 class="bold">#行銷</h3>
-                <a href="#">
+                <a href="#" class="nowork">
                   <i class="material-icons font-color-black-80">share</i>
                 </a>
               </div>
@@ -514,8 +512,8 @@
                 <img
                   src="./Images/Rectangle 35 (4).png"
                   alt="img"
-                  class="card-img"
-                >
+                  class="card-img width-percent-100"
+                />
               </div>
               <div class="padding-2 border-bottom-card">
                 <p class="font-size-md bold">Fraud Detection Platform</p>
@@ -533,7 +531,7 @@
               </div>
               <div class="d-flex space-between padding-2 font-size-sd">
                 <h3 class="bold">#客服</h3>
-                <a href="#">
+                <a href="#" class="nowork">
                   <i class="material-icons font-color-black-80">share</i>
                 </a>
               </div>
@@ -545,8 +543,8 @@
                 <img
                   src="./Images/Rectangle 35 (5).png"
                   alt="img"
-                  class="card-img"
-                >
+                  class="card-img width-percent-100"
+                />
               </div>
               <div class="padding-2 border-bottom-card">
                 <p class="font-size-md bold">Voice Assistant SDK</p>
@@ -564,7 +562,7 @@
               </div>
               <div class="d-flex space-between padding-2 font-size-sd">
                 <h3 class="bold">#生產力</h3>
-                <a href="#">
+                <a href="#" class="nowork">
                   <i class="material-icons font-color-black-80">share</i>
                 </a>
               </div>
@@ -574,16 +572,43 @@
             class="page margin-top-3 width-percent-100 d-flex justify-content-flex-end sm-justify-content-flex-start"
           >
             <ul class="d-flex font-color-black-100 sm-margin-x-1-and-25">
-              <li class="page-item page-active margin-y-0">1</li>
-              <li class="page-item margin-y-0">2</li>
-              <li class="page-item margin-y-0">3</li>
-              <li class="page-item margin-y-0">4</li>
-              <li class="page-item margin-y-0">5</li>
-              <li class="page-item margin-y-0">></li>
+              <li>
+                <button
+                  class="page-item page-active margin-y-0"
+                  style="border: none"
+                >
+                  1
+                </button>
+              </li>
+              <li>
+                <button class="page-item margin-y-0" style="border: none">
+                  2
+                </button>
+              </li>
+              <li>
+                <button class="page-item margin-y-0" style="border: none">
+                  3
+                </button>
+              </li>
+              <li>
+                <button class="page-item margin-y-0" style="border: none">
+                  4
+                </button>
+              </li>
+              <li>
+                <button class="page-item margin-y-0" style="border: none">
+                  5
+                </button>
+              </li>
+              <li>
+                <button class="page-item margin-y-0" style="border: none">
+                  >
+                </button>
+              </li>
             </ul>
           </div>
         </div>
-      </main>
+      </section>
     </section>
     <div
       class="container margin-top-9 sm-margin-none sm-margin-top-5" style="margin:0 auto;"

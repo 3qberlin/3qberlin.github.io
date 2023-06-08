@@ -181,22 +181,7 @@ img {
   position: relative;
 }
 
-@media screen and (max-width: 375px) {
-  body {
-    width: 375px;
-    margin: 0 auto;
-  }
-  .container {
-    max-width: 375px;
-  }
-  .sm-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 980px) {
   .d-none {
     display: none;
   }
@@ -637,7 +622,67 @@ img {
   width: 120rem;
 }
 
+@media screen and (max-width: 979px) {
+  .container {
+    max-width: 979px;
+  }
+  .md-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .md-margin-none {
+    margin: 0px;
+  }
+  .md-margin-x-2 {
+    margin: 2rem 0px;
+  }
+  .md-margin-top-2 {
+    margin-top: 2rem;
+  }
+  .md-width-percent-100 {
+    width: 100%;
+  }
+  .md-wrap {
+    flex-wrap: wrap;
+  }
+  .md-gap {
+    gap: 20px;
+  }
+  .md-overflow-x {
+    overflow-x: hidden;
+  }
+  .md-none {
+    display: none;
+  }
+  .md-justify-content-start {
+    justify-content: flex-start;
+  }
+  .md-width-6 {
+    width: 6rem;
+  }
+  .md-padding-right-3 {
+    padding-right: 3rem;
+  }
+  .md-overflow {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .md-margin-top-2 {
+    margin-top: 2rem;
+  }
+}
 @media screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+  .sm-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   .sm-margin-none {
     margin: 0px;
   }

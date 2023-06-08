@@ -45,12 +45,23 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    // mawidth: 375px;
-    margin: 0 auto;
-  }
   .container {
     max-width: 767px;
+    margin: 0 auto;
+  }
+  .md {
+    &-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
     margin: 0 auto;
   }
   .sm {

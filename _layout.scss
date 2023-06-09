@@ -7,6 +7,10 @@
       &-flex-end {
       }
     }
+    .d-flex {
+      display: flex;
+    }
+    
   }
 }
 
@@ -61,6 +65,9 @@
 }
 .flex-grow {
   flex-grow: 1;
+}
+.flex-direction-column {
+  flex-direction: column;
 }
 .margin {
   &-none {
@@ -558,7 +565,7 @@
 //       &-center {
 //         justify-content: center;
 //       }
-      
+
 //     }
 //     &-width-percent-100 {
 //       width: 100%;
@@ -1021,8 +1028,15 @@
   .sm-line-height-sm {
     line-height: 2 * $rem;
   }
+  .sm-flex-direction-column{
+    flex-direction: column;
+  }
 }
 
 .sm-padding-0 {
   padding: 0px;
+}
+
+.height-auto{
+  height:auto;
 }

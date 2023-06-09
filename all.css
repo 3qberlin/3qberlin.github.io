@@ -207,6 +207,9 @@ img {
   .d-none {
     display: none;
   }
+  .d .d-flex {
+    display: flex;
+  }
 }
 .d-inline-block {
   display: inline-block;
@@ -255,6 +258,10 @@ img {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.flex-direction-column {
+  flex-direction: column;
 }
 
 .margin-none {
@@ -1061,9 +1068,16 @@ img {
   .sm-line-height-sm {
     line-height: 2rem;
   }
+  .sm-flex-direction-column {
+    flex-direction: column;
+  }
 }
 .sm-padding-0 {
   padding: 0px;
+}
+
+.height-auto {
+  height: auto;
 }
 
 .card-img {

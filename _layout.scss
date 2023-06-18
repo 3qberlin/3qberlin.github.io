@@ -1,3 +1,8 @@
+.lg-overflow{
+  overflow-x: auto;
+  overflow:hidden;
+}
+
 @media screen and (min-width: 768px) {
   .d {
     &-none {
@@ -10,7 +15,10 @@
     .d-flex {
       display: flex;
     }
-    
+  }
+  .lg-overflow {
+    overflow-x: auto;
+    overflow: hidden;
   }
 }
 
@@ -547,36 +555,6 @@
   }
 }
 
-// @media screen and (max-width: 767px) {
-//   .image-container {
-//     width: 100%;
-//   }
-//   .md {
-//     &-margin {
-//       margin: 0 auto;
-//       &-2 {
-//         margin: 2 * $rem;
-//       }
-//     }
-//     &-d-flex {
-//       display: flex;
-//     }
-//     &-justify-content {
-//       &-center {
-//         justify-content: center;
-//       }
-
-//     }
-//     &-width-percent-100 {
-//       width: 100%;
-//     }
-//     &-color{
-//       color:red;
-//     }
-
-//   }
-// }
-
 @media screen and (max-width: 375px) {
   .sm {
     &-margin {
@@ -1028,7 +1006,7 @@
   .sm-line-height-sm {
     line-height: 2 * $rem;
   }
-  .sm-flex-direction-column{
+  .sm-flex-direction-column {
     flex-direction: column;
   }
 }
@@ -1037,6 +1015,6 @@
   padding: 0px;
 }
 
-.height-auto{
-  height:auto;
+.height-auto {
+  height: auto;
 }

@@ -203,12 +203,21 @@ img {
     max-width: 100%;
   }
 }
+.lg-overflow {
+  overflow-x: auto;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .d-none {
     display: none;
   }
   .d .d-flex {
     display: flex;
+  }
+  .lg-overflow {
+    overflow-x: auto;
+    overflow: hidden;
   }
 }
 .d-inline-block {

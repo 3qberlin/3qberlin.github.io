@@ -26,5 +26,9 @@ stop2.onclick = function(e){
   return false;
 }
 
+AOS.init({
+  
+})
+
 
 

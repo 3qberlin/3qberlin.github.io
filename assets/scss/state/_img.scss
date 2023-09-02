@@ -26,7 +26,7 @@
     display: block;
     width: 271px;
     height: 43px;
-    background-image: url(../assets/images/web/decoration/01.png);
+    background-image: url('../assets/images/web/decoration/01.png');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -46,7 +46,7 @@
     display: block;
     width: 433px;
     height: 68px;
-    background-image: url(../assets/images/web/decoration/01.png);
+    background-image: url('../assets/images/web/decoration/01.png');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -61,4 +61,23 @@
   max-width: 100%;
   // height: 886px;
   height: 906px;
+}
+
+.mobBg::after{
+  content:'';
+  // display: block;
+    width: 271px;
+    height: 43px;
+    background-image: url('/assets/images/mobile/decoration/ds.svg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.datingWeb{
+  top:-50px;
+  left:260px;
 }

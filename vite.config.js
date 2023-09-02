@@ -25,7 +25,7 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法：
   // base: '/Repository 的名稱/'
-  base:process.env.NODE_ENV === 'production' ? '/3qberlin.github.io/' : '/',
+  base:process.env.NODE_ENV === 'production' ? '/i_pay/' : '/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
